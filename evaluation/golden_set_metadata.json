@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "freeze_date": "2026-09-11",
+  "size": 200,
+  "description": "Hand-labeled Golden Evaluation Set. Isolated from retrieval corpus by conversation_id.",
+  "sampling_seed": 42
+}

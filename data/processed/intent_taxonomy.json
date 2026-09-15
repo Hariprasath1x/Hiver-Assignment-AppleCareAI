@@ -1,0 +1,160 @@
+[
+  {
+    "intent_id": "battery_power_issue",
+    "intent_name": "Battery & Power Issue",
+    "definition": "Issues related to battery drain, poor battery life, device getting too hot, or failing to charge.",
+    "inclusion_criteria": "Mentions of battery, charging, overheating, phone dying quickly.",
+    "exclusion_criteria": "Does not cover device crashing or freezing unless explicitly linked to battery/power loss.",
+    "representative_examples": [
+      "is an iPhone 7 Plus meant to get so hot when it’s charging?!?!",
+      "Tired of charging my phone for mad long for it to die in 30 minutes .. wassup ?",
+      "Will iphone SE (ios 11) battery will ever optimise like ios 10 in future"
+    ],
+    "approximate_frequency": "High (~10-15%)",
+    "typical_historical_response": "Asks to check Battery Health in Settings, points to a KB article on maximizing battery life.",
+    "common_confusions": "May be confused with 'Software/System Issue' if a user says 'the update ruined my battery'.",
+    "why_separate": "Battery issues are distinct from general software bugs because they involve specific hardware/power troubleshooting steps rather than resetting the device."
+  },
+  {
+    "intent_id": "software_system_issue",
+    "intent_name": "Software & System Issue",
+    "definition": "General software bugs, lag, freezing, apps crashing, or errors encountered during iOS/macOS updates.",
+    "inclusion_criteria": "Mentions of phone freezing, crashing, lag, iOS update failures, boot loops.",
+    "exclusion_criteria": "Excludes specific keyboard bugs (e.g. the 'i' bug) and network connectivity issues.",
+    "representative_examples": [
+      "This IOS 11.0.2 update is trash. Phone has been freezing all day, apps tripping.",
+      "My iPhone6 was generally fine until the iOS update crashed it.",
+      "Fking brand new MacBook just took a shit after trying to install Sierra"
+    ],
+    "approximate_frequency": "Very High (~20-25%)",
+    "typical_historical_response": "Asks for current iOS version, suggests force restart, or asks if it happens in specific apps.",
+    "common_confusions": "Confused with 'Hardware/Damage Repair' when a user says 'my phone is broken' without specifying if it's a physical or software break.",
+    "why_separate": "This forms the bulk of traditional software support, handled via standard troubleshooting workflows (restart, update, restore)."
+  },
+  {
+    "intent_id": "keyboard_text_input_issue",
+    "intent_name": "Keyboard & Text Input Issue",
+    "definition": "Issues specifically regarding typing, keyboard rendering, autocorrect, or predictive text.",
+    "inclusion_criteria": "Mentions of the letter 'i' turning into 'A ?' or a box, autocorrect failing, keyboard lagging.",
+    "exclusion_criteria": "General lag outside of the keyboard.",
+    "representative_examples": [
+      "fix the little boxes shit we tired of seeing it",
+      "what the hell is going on... why is everyone’s phone doing this now I️ I️ I️ I️ when we type the letter 'i'",
+      "can y’all fix this i issue please... its been 3 days now. And im tired of my i’s being typed as A’s"
+    ],
+    "approximate_frequency": "High (~15-20% due to iOS 11 historical data)",
+    "typical_historical_response": "Provides a temporary text-replacement workaround via Settings > General > Keyboard, or tells them to update to iOS 11.1.1.",
+    "common_confusions": "Confused with 'Software/System Issue' since it is technically a software bug.",
+    "why_separate": "Operationally, typing issues (especially severe ones) have their own immediate workarounds (Text Replacement) that differ completely from standard app crash troubleshooting."
+  },
+  {
+    "intent_id": "app_store_media_services",
+    "intent_name": "App Store & Media Services",
+    "definition": "Issues relating to downloading apps, Apple Music, Podcasts, iTunes credit, or iCloud storage.",
+    "inclusion_criteria": "Mentions of App Store, Apple Music, podcast app, iTunes, iCloud storage full, missing songs.",
+    "exclusion_criteria": "Excludes issues with 3rd-party apps crashing (that belongs in Software/System issue).",
+    "representative_examples": [
+      "I can’t update my apps so some of them I can’t go on anymore",
+      "hey @115858 your podcast app is hot garbage since ios 11 came out",
+      "How do i pay for something with itunes credit please??"
+    ],
+    "approximate_frequency": "Medium (~5-10%)",
+    "typical_historical_response": "Often deflects to a specialized iTunes/Media support team via DM, or provides links to manage Apple ID payments.",
+    "common_confusions": "Confused with 'Account/Security' when payment methods are declined.",
+    "why_separate": "Media and purchasing issues fall under a different business unit (Services) than hardware/software troubleshooting."
+  },
+  {
+    "intent_id": "hardware_damage_repair",
+    "intent_name": "Hardware, Damage & Repair",
+    "definition": "Physical hardware failures, broken screens, water damage, or unresponsive hardware components (Touch ID, buttons, cameras).",
+    "inclusion_criteria": "Mentions of cracked screen, water damage, Touch ID broken, camera lens cracked, physical damage.",
+    "exclusion_criteria": "Excludes battery issues unless physical swelling is mentioned.",
+    "representative_examples": [
+      "Constant screen freezing with a genuine apple screen. How do I get a refund ?",
+      "Updates to iOS 11.3 and now my Touch ID isn’t working.",
+      "My Cinema Display doesn't work with My macbook touchbar using the correct adaptor."
+    ],
+    "approximate_frequency": "Medium (~5-10%)",
+    "typical_historical_response": "Requires inspecting the device. Points customer to locate an Apple Store or Authorized Service Provider.",
+    "common_confusions": "Confused with Software bugs when hardware features (like a mic) stop working due to a software glitch.",
+    "why_separate": "Cannot be fixed via software troubleshooting. Requires physical repair booking."
+  },
+  {
+    "intent_id": "account_security_activation",
+    "intent_name": "Account, Security & Activation",
+    "definition": "Issues logging into Apple ID, 2-factor authentication, activation lock, forgotten passwords, or unauthorized charges.",
+    "inclusion_criteria": "Mentions of Apple ID, iCloud login, Activation Error, hacked account, forgotten password.",
+    "exclusion_criteria": "Excludes simply running out of iCloud storage space (Media Services).",
+    "representative_examples": [
+      "can’t activate my iPhone due to server issues heellllllp",
+      "Can yall please call me back so I can sign into my apple account??",
+      "I'm getting notified of sign in attempts (by myself) but it keeps saying the wrong location"
+    ],
+    "approximate_frequency": "Low to Medium (~5%)",
+    "typical_historical_response": "Immediate escalation to DM or secure link due to privacy rules. Points to iforgot.apple.com.",
+    "common_confusions": "Confused with App Store issues if they can't download an app because of a locked account.",
+    "why_separate": "High-risk category. The AI agent should almost always escalate these to avoid leaking PII or assisting with social engineering."
+  },
+  {
+    "intent_id": "network_connectivity",
+    "intent_name": "Network & Connectivity",
+    "definition": "Issues connecting to Wi-Fi, cellular data, Bluetooth devices, or AirDrop.",
+    "inclusion_criteria": "Mentions of wifi, bluetooth, no service, dropping calls, airdrop failing.",
+    "exclusion_criteria": "Excludes issues with specific web services (like Apple Music) if the underlying internet is fine.",
+    "representative_examples": [
+      "I can’t connect to my WiFi even when I’m close to the router. What the heck I need help.",
+      "message of i have not data provider, Telcel support review the chip and si not the service"
+    ],
+    "approximate_frequency": "Low (~5%)",
+    "typical_historical_response": "Provides KB article on 'Reset Network Settings' or checking carrier updates.",
+    "common_confusions": "Confused with 'Hardware issue' if the wifi antenna is physically broken.",
+    "why_separate": "Follows a very standard, distinct troubleshooting tree (Reset Network Settings, contact Carrier)."
+  },
+  {
+    "intent_id": "feature_inquiry_how_to",
+    "intent_name": "Feature Inquiry & How-To",
+    "definition": "Questions about how to use a feature, checking compatibility, or general non-broken inquiries.",
+    "inclusion_criteria": "Questions starting with 'How do I...', 'Is it possible to...', 'Where can I find...'",
+    "exclusion_criteria": "Excludes questions about fixing something that is actively broken.",
+    "representative_examples": [
+      "how do I add my battery percentage to always show on iPhone X?",
+      "is there a page I can check what features of my new beats studio3 wireless aren’t available under iOS 10?"
+    ],
+    "approximate_frequency": "Low (~5%)",
+    "typical_historical_response": "Links directly to an Apple Support KB article explaining the feature.",
+    "common_confusions": "Confused with Software Issues if the user asks 'How do I fix X?'",
+    "why_separate": "These are low-risk, high-confidence retrieval cases that are perfect for auto-handling via documentation links."
+  },
+  {
+    "intent_id": "order_delivery_inquiry",
+    "intent_name": "Order & Delivery Inquiry",
+    "definition": "Questions regarding purchasing, shipping status, Apple Store appointments, or returns.",
+    "inclusion_criteria": "Mentions of order status, delivery, pre-orders, Apple Store appointments, shipping.",
+    "exclusion_criteria": "Excludes digital App Store purchases.",
+    "representative_examples": [
+      "My iPhone X order is “In Progress” Ppl who ordered after me are receiving their deliveries already !",
+      "Well guys, the solution your team gave me was to buy a replacement from you plus I had to pay the shipping"
+    ],
+    "approximate_frequency": "Low (~2-3%)",
+    "typical_historical_response": "Requests order number in DM.",
+    "common_confusions": "Confused with App Store queries when the word 'buy' or 'purchase' is used.",
+    "why_separate": "Requires backend systems (order tracking) that an LLM agent wouldn't have access to; thus, necessitates escalation."
+  },
+  {
+    "intent_id": "other_unclear_context_dependent",
+    "intent_name": "Other, Unclear & Context-Dependent",
+    "definition": "Messages that lack sufficient context to categorize, follow-ups to previous conversations, or rants without an actionable problem.",
+    "inclusion_criteria": "Extremely short messages, just URLs/Images, 'Yes I did', 'DM?', 'Are you going to help me then?'",
+    "exclusion_criteria": "Any message with a clear technical problem.",
+    "representative_examples": [
+      "Yes you did thx :)",
+      "Just like that!!!",
+      "DM?",
+      "Are you going to help me then?"
+    ],
+    "approximate_frequency": "Medium (~10%)",
+    "typical_historical_response": "Asks clarifying questions ('Which OS are you on?'), deflects to DM, or acknowledges the thanks.",
+    "common_confusions": "Can capture poorly phrased but legitimate issues if the classifier is weak.",
+    "why_separate": "Crucial for safety. The agent must recognize when it DOES NOT know what the customer is talking about, and escalate rather than guessing."
+  }
+]

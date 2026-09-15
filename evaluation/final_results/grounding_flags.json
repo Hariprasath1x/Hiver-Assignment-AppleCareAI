@@ -1,0 +1,498 @@
+[
+  {
+    "id": "GS_027",
+    "customer_message": "@AppleSupport also you overcharged me $10 this month for my iTunes bill.",
+    "expected_intent": "battery_power_issue",
+    "predicted_intent": "app_store_media_services",
+    "intent_correct": 0,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.97,
+    "top_similarity": 0.7974241971969604,
+    "top3_similarity": 0.7909982005755106,
+    "top5_similarity": 0.7860103011131286,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "1762188",
+      "945501",
+      "1269557",
+      "427835",
+      "369278"
+    ],
+    "draft_reply": "Hi there, I\u2019m sorry you\u2019re seeing an unexpected charge. Our iTunes Store support team can review the billing details and help resolve this. Please reach out to them here: https://t.co/SDIe7UiyJN.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/sdie7uiyjn."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_028",
+    "customer_message": "@AppleSupport what's up. iPhone 7 iOS 11.0.3 made it worse, it's draining as I type! #iphone7 #BatteryDrain #Apple Apple software 11.0.3 update has just ruined my iPhone thanks a lot Apple @AppleSupport @115858",
+    "expected_intent": "battery_power_issue",
+    "predicted_intent": "battery_power_issue",
+    "intent_correct": 1,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.96,
+    "top_similarity": 0.8549728393554688,
+    "top3_similarity": 0.8519255916277567,
+    "top5_similarity": 0.8460114359855652,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "1906417",
+      "1443127",
+      "2315952",
+      "857134",
+      "1144282"
+    ],
+    "draft_reply": "Hi\u202f@115858, we\u2019re sorry you\u2019re experiencing rapid battery drain after updating to iOS\u202f11.0.3. Please try the troubleshooting steps in this article, which covers battery\u2011optimizing settings and post\u2011update checks: https://t.co/bivpdfBNJ6.  \n\nIf the issue persists after following those steps, let us know and we\u2019ll connect you with a specialist for further assistance.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/bivpdfbnj6."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_033",
+    "customer_message": "@AppleSupport the keyboard isn\u2019t working on the top keys (i o u y t) of my MacBook Pro. Any suggestions to fix the issue?",
+    "expected_intent": "keyboard_text_input_issue",
+    "predicted_intent": "keyboard_text_input_issue",
+    "intent_correct": 1,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.97,
+    "top_similarity": 0.7771304845809937,
+    "top3_similarity": 0.7553955515225729,
+    "top5_similarity": 0.7488937258720398,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "1930914",
+      "1774724",
+      "1433698",
+      "2573888",
+      "1640727"
+    ],
+    "draft_reply": "Hi\u202f@AppleSupport,\n\nThanks for reaching out. To troubleshoot the non\u2011responsive top\u2011row keys on your MacBook\u202fPro, please try the following steps:\n\n1. **Update macOS** \u2013 Make sure you\u2019re running the latest version of macOS.  \n2. **Reset the SMC** \u2013 Shut down, then press\u202fShift\u202f+\u202fControl\u202f+\u202fOption on the left side of the keyboard and the power button for 10\u202fseconds, release, and turn the Mac back on.  \n3. **Reset NVRAM** \u2013 Restart and hold\u202fOption\u202f+\u202fCommand\u202f+\u202fP\u202f+\u202fR for about 20\u202fseconds.  \n4. **Clean the keys** \u2013 Gently clean the affected keys with compressed air or a soft brush to remove any debris.  \n5. **Test in Safe Mode** \u2013 Restart while holding the Shift key; see if the keys work there.  \n6. **Try an external keyboard** \u2013 This helps determine whether the issue is hardware\u2011related.\n\nIf the problem continues after these steps, please let us know and we\u2019ll look into it further. In the meantime, you may find this resource helpful: https://t.co/19rtmutOA8.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/19rtmutoa8."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_034",
+    "customer_message": "@AppleSupport why is it every time I\ufe0f type the letter \u2018I\u2019 it turns into a question mark box... figure it out for God\u2019s sake",
+    "expected_intent": "keyboard_text_input_issue",
+    "predicted_intent": "keyboard_text_input_issue",
+    "intent_correct": 1,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.97,
+    "top_similarity": 0.9459819793701172,
+    "top3_similarity": 0.937583327293396,
+    "top5_similarity": 0.9287978172302246,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "1587408",
+      "1161957",
+      "1701974",
+      "1618260",
+      "1671998"
+    ],
+    "draft_reply": "We\u2019re aware that typing the letter \u201cI\u201d is showing up as a question\u2011mark box. A temporary workaround is available here: https://t.co/xXaXeeSRt9.\u202fWe\u2019re working on a fix that will be included in a future software update. If you need any further assistance, just let us know.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/xxaxeesrt9."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_035",
+    "customer_message": "@115858 I\ufe0ft..... I just want to type it! And not select I\ufe0ft from autocorrect @AppleSupport",
+    "expected_intent": "keyboard_text_input_issue",
+    "predicted_intent": "keyboard_text_input_issue",
+    "intent_correct": 1,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.96,
+    "top_similarity": 0.7869316339492798,
+    "top3_similarity": 0.7818979819615682,
+    "top5_similarity": 0.7759226322174072,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "1583036",
+      "2142342",
+      "1632300",
+      "1591485",
+      "1078795"
+    ],
+    "draft_reply": "Thanks for reaching out.\u202fTo stop autocorrect from changing the letter **I**, please try the temporary workaround outlined here:\u202fhttps://t.co/xXaXeeSRt9. If you still have trouble, just let us know and we\u2019ll help further.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/xxaxeesrt9."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_036",
+    "customer_message": "@AppleSupport CAN YOU FIX THIS STUPID GLITCH WITH THE LETTER \u201cEYE\u201d PLEASE.",
+    "expected_intent": "keyboard_text_input_issue",
+    "predicted_intent": "keyboard_text_input_issue",
+    "intent_correct": 1,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.96,
+    "top_similarity": 0.9766150712966919,
+    "top3_similarity": 0.9363620082537333,
+    "top5_similarity": 0.9190298795700074,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "2123206",
+      "2353662",
+      "2169753",
+      "2113823",
+      "1644507"
+    ],
+    "draft_reply": "We\u2019re sorry you\u2019re experiencing the autocorrect issue with \u201ceye.\u201d A temporary workaround is available here: https://t.co/xXaXeeSRt9. Apple is working on a fix that will be included in an upcoming iOS update. Thank you for your patience.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/xxaxeesrt9."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_042",
+    "customer_message": "@AppleSupport Hey Apple. Where are our phones doing this when we type \u201cI\ufe0f\u201d https://t.co/iqCsqqfvZq",
+    "expected_intent": "keyboard_text_input_issue",
+    "predicted_intent": "keyboard_text_input_issue",
+    "intent_correct": 1,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.96,
+    "top_similarity": 0.8291002511978149,
+    "top3_similarity": 0.8242124120394388,
+    "top5_similarity": 0.8193814277648925,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "2039785",
+      "2147721",
+      "1734394",
+      "1645137",
+      "2138929"
+    ],
+    "draft_reply": "We\u2019re aware of the issue where typing \u201cI\u201d shows an unexpected character. A temporary workaround is available until a future iOS update resolves it. Please follow the steps in this guide: https://t.co/xXaXeeSRt9.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/xxaxeesrt9."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_054",
+    "customer_message": "@115858 I have 6. I updated IOS 11. But now cell started searching Wifi network, i turned it off manytimes yet it gets auto On? It drains battery.",
+    "expected_intent": "network_connectivity",
+    "predicted_intent": "network_connectivity",
+    "intent_correct": 1,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.86,
+    "top_similarity": 0.7243822813034058,
+    "top3_similarity": 0.7230410575866699,
+    "top5_similarity": 0.7194707274436951,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "486089",
+      "2845694",
+      "441059",
+      "1133150",
+      "825139"
+    ],
+    "draft_reply": "Hi @115858, we can help with that. In iOS\u202f11 the Wi\u2011Fi button in Control Center only disconnects you temporarily \u2013 the Wi\u2011Fi radio will turn back on automatically, which can affect battery life. To keep Wi\u2011Fi off, open **Settings\u202f\u2192\u202fWi\u2011Fi** and toggle it off there (or disable \u201cAsk to Join Networks\u201d in the same screen). For more details, see Apple\u2019s guide: https://t.co/vzVz37YMv0. Let us know if you need any further assistance.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/vzvz37ymv0."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_175",
+    "customer_message": "@AppleSupport order in the album, but when I got to re-download them, they just don\u2019t show up. It\u2019s impossible to re-download them. Please help. (2/2)",
+    "expected_intent": "order_delivery_inquiry",
+    "predicted_intent": "app_store_media_services",
+    "intent_correct": 0,
+    "expected_action": "ESCALATE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 0,
+    "intent_confidence": 0.96,
+    "top_similarity": 0.7531713247299194,
+    "top3_similarity": 0.7511153022448221,
+    "top5_similarity": 0.7482254981994629,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "2450944",
+      "1434223",
+      "148176",
+      "1508680",
+      "2284310"
+    ],
+    "draft_reply": "Hi\u202f@AppleSupport, I\u2019m sorry you\u2019re having trouble re\u2011downloading the album. Could you let me know what you see when you tap the download button\u2014any error message or other behavior?  \n\nYou can also try downloading the album from the **Purchased** section: open the Music app, tap **More\u202f>\u202fPurchased**, and locate the album there.  \n\nIf the issue persists, please reach out to our iTunes Store team for further assistance: https://t.co/SDIe7UiyJN. Let us know how it goes!",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/sdie7uiyjn."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_176",
+    "customer_message": "So @115948 is acting WONKY. I\u2019ve made playlists and they\u2019re not coming up &amp; they\u2019re out of order when I send them. What\u2019s up @AppleSupport !?",
+    "expected_intent": "order_delivery_inquiry",
+    "predicted_intent": "app_store_media_services",
+    "intent_correct": 0,
+    "expected_action": "ESCALATE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 0,
+    "intent_confidence": 0.96,
+    "top_similarity": 0.7410367727279663,
+    "top3_similarity": 0.7394160032272339,
+    "top5_similarity": 0.7355489134788513,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "2398173",
+      "2726859",
+      "1522712",
+      "1572320",
+      "119492"
+    ],
+    "draft_reply": "@115948\u202fThanks for reaching out. Could you let us know which device and iOS version you\u2019re using? Also, please check that **Sync\u202fLibrary** (iCloud\u202fMusic\u202fLibrary) is enabled in Settings\u202f\u2192\u202fMusic. If it\u2019s already on, try turning it off, restarting the device, and then turning it back on. While you\u2019re at it, make sure Shuffle isn\u2019t enabled when you play the playlist. Here\u2019s a quick guide that walks you through these steps: https://t.co/9VQ9VywZJ2. Let us know if the playlists appear correctly after that.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/9vq9vywzj2."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_179",
+    "customer_message": "yesterday a bunch of my photos went out of order and i was like wtf but this IS NOT FUCKING COOL @115858 @AppleSupport",
+    "expected_intent": "order_delivery_inquiry",
+    "predicted_intent": "software_system_issue",
+    "intent_correct": 0,
+    "expected_action": "ESCALATE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 0,
+    "intent_confidence": 0.93,
+    "top_similarity": 0.8621501922607422,
+    "top3_similarity": 0.7819114724795023,
+    "top5_similarity": 0.7600712537765503,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "1637838",
+      "1748668",
+      "408821",
+      "2567044",
+      "2772632"
+    ],
+    "draft_reply": "We\u2019re sorry you\u2019re seeing your photos out of order.\u202fOur Photos specialists can investigate this for you. Please get in touch with them here:\u202fhttps://t.co/IBIY3vMgPj.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/ibiy3vmgpj."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_068",
+    "customer_message": "Bug chato do iOS 11, voc\u00ea esta ouvindo um podcast mas na tela bloqueada \u00e9 exibido outro podcast. @115858",
+    "expected_intent": "app_store_media_services",
+    "predicted_intent": "software_system_issue",
+    "intent_correct": 0,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.97,
+    "top_similarity": 0.7054784893989563,
+    "top3_similarity": 0.6905720631281534,
+    "top5_similarity": 0.6823686838150025,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "743429",
+      "2053291",
+      "1007653",
+      "2485803",
+      "1227234"
+    ],
+    "draft_reply": "Since our Twitter support is available in English, you can get help at https://t.co/IBIY3vMgPj or join https://t.co/pvaOFfPbjt.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/pvaoffpbjt."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_083",
+    "customer_message": "@AppleSupport hey I subscribed to an app by mistake, how do I get a refund?",
+    "expected_intent": "feature_inquiry_how_to",
+    "predicted_intent": "app_store_media_services",
+    "intent_correct": 0,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.97,
+    "top_similarity": 0.8815068006515503,
+    "top3_similarity": 0.8598931829134623,
+    "top5_similarity": 0.8428804636001587,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "2453284",
+      "926457",
+      "1755153",
+      "2072159",
+      "35262"
+    ],
+    "draft_reply": "Hi\u202f@AppleSupport,\u202fthanks for reaching out. To request a refund for the app you subscribed to by mistake, please visit the following page and follow the instructions: https://t.co/A5QhKRZhQQ. If you run into any issues or need additional help, just let us know.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/a5qhkrzhqq."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_085",
+    "customer_message": "@AppleSupport Can you tell me what this SpringBoard is and why it\u2019s using mobile data? https://t.co/kjwv0MbJAy",
+    "expected_intent": "feature_inquiry_how_to",
+    "predicted_intent": "feature_inquiry_how_to",
+    "intent_correct": 1,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.96,
+    "top_similarity": 0.6526933908462524,
+    "top3_similarity": 0.6311581333478292,
+    "top5_similarity": 0.6243687748908997,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "1928312",
+      "481751",
+      "1291172",
+      "503596",
+      "2834487"
+    ],
+    "draft_reply": "Hi @\u200b[username]\u202f\u2014\u202fthe \u201cSpringBoard\u201d message you\u2019re seeing is not a normal iOS feature; it\u2019s most likely a fraudulent popup that can appear in Safari or other apps and may try to use cellular data. You can learn how to block these pop\u2011ups and manage which apps are allowed to use mobile data here: https://t.co/qr0pQfKgYD\u202fand https://t.co/GDrqU22YpT. If the issue persists, let us know and we\u2019ll investigate further.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/gdrqu22ypt."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_094",
+    "customer_message": "@AppleSupport what is this \u201cother\u201d and how do I delete it? It seems to use up a lot of space. #iphone https://t.co/XX9BHoBOiC",
+    "expected_intent": "feature_inquiry_how_to",
+    "predicted_intent": "feature_inquiry_how_to",
+    "intent_correct": 1,
+    "expected_action": "AUTO_HANDLE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 1,
+    "intent_confidence": 0.96,
+    "top_similarity": 0.8590471148490906,
+    "top3_similarity": 0.8074694077173868,
+    "top5_similarity": 0.7722077369689941,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "2706834",
+      "955126",
+      "2965434",
+      "1675451",
+      "2524416"
+    ],
+    "draft_reply": "Hi\u202f@AppleSupport, thanks for reaching out!  \n\n\u201cOther\u201d storage is made up of items that iOS can\u2019t place into the standard categories\u2014things like system files, caches, logs, Siri data, software updates, and temporary files. It can grow over time, but you can often shrink it by:\n\n* Clearing Safari\u2019s cache (Settings\u202f\u2192\u202fSafari\u202f\u2192\u202fClear History and Website Data)  \n* Deleting old message attachments or large iMessage threads  \n* Offloading or deleting apps you no longer use (Settings\u202f\u2192\u202fGeneral\u202f\u2192\u202fiPhone Storage)  \n* Restarting your iPhone, which can clear some temporary files  \n\nFor a detailed walk\u2011through of what \u201cOther\u201d includes and additional steps to free up space, please see this support article: https://t.co/0yFHFRYSnX.  \n\nHope this helps! Let us know if you have any other questions.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/0yfhfrysnx."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  {
+    "id": "GS_126",
+    "customer_message": "@AppleSupport Try to open ESPN app on my apple tvs 4th generation and 4k It won't open. Click on app, Wheel spins, goes back to app screen.",
+    "expected_intent": "hardware_damage_repair",
+    "predicted_intent": "software_system_issue",
+    "intent_correct": 0,
+    "expected_action": "ESCALATE",
+    "predicted_action": "AUTO_HANDLE",
+    "action_correct": 0,
+    "intent_confidence": 0.96,
+    "top_similarity": 0.7582664489746094,
+    "top3_similarity": 0.7278963923454285,
+    "top5_similarity": 0.6980517506599426,
+    "evidence_count": 5,
+    "evidence_ids": [
+      "1602138",
+      "718100",
+      "1170816",
+      "582749",
+      "1215614"
+    ],
+    "draft_reply": "I\u2019m sorry you\u2019re having trouble with the ESPN app on your Apple\u202fTV. To get this resolved quickly, please reach out to our Apple\u202fTV specialists here: https://t.co/IBIY3vMgPj. They\u2019ll be able to investigate the issue and help you get the app working again.",
+    "action_reason": "Confidence and evidence quality are sufficient.",
+    "grounding_flags": [
+      "URL not in evidence: https://t.co/ibiy3vmgpj."
+    ],
+    "provider_used": "groq",
+    "model_used": "openai/gpt-oss-120b",
+    "fallback_used": false,
+    "fallback_reason": null
+  }
+]

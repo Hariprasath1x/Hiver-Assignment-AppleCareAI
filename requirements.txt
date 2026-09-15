@@ -1,0 +1,86 @@
+# AppleCareAI — SupportLens Evaluation Requirements
+# Generated from full import audit of src/, evaluation/, tests/, scripts/
+# Compatible with Python 3.10+
+# Install with: pip install -r requirements.txt
+
+# ============================================================
+# LLM Providers
+# ============================================================
+
+# Groq SDK — used by src/llm/groq.py: `from groq import Groq`
+groq>=0.9.0
+
+# Google GenAI SDK — used by src/llm/gemini.py: `from google import genai`
+# IMPORTANT: The import is `from google import genai`, which requires `google-genai`,
+# NOT the older `google-generativeai` package.
+google-genai>=1.0.0
+
+# OpenAI SDK — used by src/llm/provider.py: `from openai import OpenAI`
+# Retained as a non-primary provider option.
+openai>=1.0.0
+
+# ============================================================
+# Retrieval — Embeddings + FAISS
+# ============================================================
+
+# MiniLM sentence embeddings — used by src/retrieval/embedder.py:
+# `from sentence_transformers import SentenceTransformer`
+# Pulls in torch and transformers as transitive dependencies.
+sentence-transformers>=2.7.0
+
+# FAISS CPU vector similarity search — used by src/retrieval/index.py:
+# `import faiss`
+# Use faiss-cpu on CPU-only machines (no GPU required for this project).
+faiss-cpu>=1.7.4
+
+# ============================================================
+# Data & ML
+# ============================================================
+
+# Numerical arrays — used throughout: `import numpy as np`
+numpy>=1.25.0
+
+# DataFrames — used throughout: `import pandas as pd`
+# Also used for reading/writing Parquet corpus files.
+pandas>=2.0.0
+
+# Parquet file support for pandas (read_parquet/to_parquet).
+# pandas requires either pyarrow or fastparquet. pyarrow is recommended.
+pyarrow>=14.0.0
+
+# Scikit-learn — used for intent baselines, evaluation metrics, confusion matrices:
+# `from sklearn.metrics import accuracy_score, f1_score, ...`
+# `from sklearn.feature_extraction.text import TfidfVectorizer`
+# `from sklearn.cluster import MiniBatchKMeans`
+scikit-learn>=1.3.0
+
+# ============================================================
+# Agent / Structured Output
+# ============================================================
+
+# Pydantic v2 — used for structured LLM output schemas:
+# `from pydantic import BaseModel, Field`
+# Must be v2 (model_validate_json, model_json_schema).
+pydantic>=2.0.0
+
+# ============================================================
+# Environment & Configuration
+# ============================================================
+
+# Load .env files — used by evaluation runner and scripts:
+# `from dotenv import load_dotenv`
+python-dotenv>=1.0.0
+
+# ============================================================
+# Testing
+# ============================================================
+
+# pytest — used by tests/: `import pytest`
+pytest>=7.0.0
+
+# ============================================================
+# Progress Bars (transitive, explicit for reproducibility)
+# ============================================================
+
+# tqdm — used by FAISS index build scripts and sentence-transformers internals
+tqdm>=4.65.0

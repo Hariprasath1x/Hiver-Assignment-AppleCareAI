@@ -1,0 +1,70 @@
+# ============================================================
+# AppleCareAI — SupportLens .gitignore
+# ============================================================
+
+# ---- API Keys & Secrets ----
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ---- Virtual Environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Testing ----
+.pytest_cache/
+.coverage
+htmlcov/
+*.xml
+.tox/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb
+
+# ---- IDEs ----
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---- Large Dataset Files (not versioned) ----
+datasets/twcs.csv
+datasets/sample.csv
+datasets/*.csv
+data/raw/
+data/interim/
+
+# ---- ML Artifacts (large binaries) ----
+data/processed/*.faiss
+data/processed/*.parquet
+!data/processed/retrieval_index.faiss
+!data/processed/retrieval_corpus.parquet
+
+# ---- Logs ----
+*.log
+demo.log
+
+# ---- Scratch ----
+scratch/
+notebooks/

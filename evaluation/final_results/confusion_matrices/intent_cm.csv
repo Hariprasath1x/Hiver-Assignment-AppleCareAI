@@ -1,0 +1,12 @@
+,account_security_activation,app_store_media_services,battery_power_issue,feature_inquiry_how_to,hardware_damage_repair,keyboard_text_input_issue,network_connectivity,order_delivery_inquiry,other_unclear_context_dependent,software_system_issue,FAILED
+account_security_activation,4,0,0,0,0,0,0,0,0,0,0
+app_store_media_services,0,7,1,4,0,0,0,0,0,4,0
+battery_power_issue,0,1,10,1,2,0,0,0,0,2,0
+feature_inquiry_how_to,0,3,1,8,1,0,1,1,0,1,0
+hardware_damage_repair,0,0,1,0,9,1,0,0,0,5,0
+keyboard_text_input_issue,0,0,0,0,0,11,0,0,1,4,0
+network_connectivity,0,0,2,1,0,0,12,0,0,1,0
+order_delivery_inquiry,1,7,0,0,0,0,0,17,1,5,0
+other_unclear_context_dependent,0,3,0,0,0,0,0,0,48,1,0
+software_system_issue,0,0,0,3,0,0,1,0,0,13,0
+FAILED,0,0,0,0,0,0,0,0,0,0,0

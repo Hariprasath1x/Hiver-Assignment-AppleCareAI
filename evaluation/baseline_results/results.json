@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "dataset_version": "1.0",
+    "golden_set_version": "1.0.0",
+    "random_seed": 42,
+    "timestamp": "2026-09-11T12:22:58.255604"
+  },
+  "baseline_1_majority": {
+    "intent_accuracy": 0.26,
+    "intent_macro_f1": 0.04126984126984127,
+    "intent_weighted_f1": 0.10730158730158729,
+    "escalation_precision": 0.515,
+    "escalation_recall": 1.0,
+    "escalation_rate": 1.0
+  },
+  "baseline_2_tfidf": {
+    "intent_accuracy": 0.84,
+    "intent_macro_f1": 0.8332608968092841,
+    "intent_weighted_f1": 0.8352683911071008,
+    "escalation_precision": 0.776,
+    "escalation_recall": 0.941747572815534,
+    "auto_handle_precision": 0.92,
+    "escalation_rate": 0.625,
+    "retrieval_avg_top1_similarity": 0.632015978321733,
+    "thresholds": {
+      "intent_confidence": 0.35,
+      "retrieval_similarity": 0.4
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "software_system_issue",
+      "battery_power_issue",
+      "keyboard_text_input_issue",
+      "network_connectivity",
+      "app_store_media_services",
+      "feature_inquiry_how_to",
+      "other_unclear_context_dependent",
+      "hardware_damage_repair",
+      "account_security_activation",
+      "order_delivery_inquiry"
+    ],
+    "matrix": [
+      [
+        14,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        13,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        5,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0,
+        2,
+        47,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        4,
+        0,
+        0,
+        24
+      ]
+    ]
+  }
+}

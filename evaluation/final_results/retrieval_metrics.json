@@ -1,0 +1,11 @@
+{
+  "mean_top1_sim": 0.7766585510969162,
+  "median_top1_sim": 0.8037027716636658,
+  "mean_top3_sim": 0.7608519697189331,
+  "mean_top5_sim": 0.7515727747678757,
+  "p25_top1_sim": 0.7450463473796844,
+  "p75_top1_sim": 0.8799711018800735,
+  "evidence_availability_rate": 0.945,
+  "retrieval_triggered_escalation_rate": 0.0,
+  "weak_evidence_rate": 0.065
+}
